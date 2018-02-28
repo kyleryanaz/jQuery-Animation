@@ -5,8 +5,35 @@ function getRandomInt(max) {
 
 //Moves the chicken on click
 $("#chicken").click(function() {
-  $(this)
-    .animate({ bottom: "+=1vh" })
-    .animate({ left: "+=25vh" })
-    .animate({ bottom: "-=1vh" });
+  let direction = getRandomInt(4);
+  switch (direction) {
+    case 0:
+      console.log("up");
+      $(this)
+        .animate({ bottom: "+=1vh" })
+        .animate({ bottom: "+=25vh" })
+        .animate({ bottom: "-=1vh" });
+      break;
+    case 1:
+      console.log("right");
+      $(this)
+        .animate({ bottom: "+=1vh" })
+        .animate({ left: "+=25vh" })
+        .animate({ bottom: "-=1vh" });
+      break;
+    case 2:
+      console.log("down");
+      $(this)
+        .animate({ bottom: "+=1vh" })
+        .animate({ bottom: "-=25vh" })
+        .animate({ bottom: "-=1vh" });
+      break;
+    case 3:
+      console.log("left");
+      $(this)
+        .animate({ bottom: "+=1vh" })
+        .animate({ left: "-=25vh" })
+        .animate({ bottom: "-=1vh" });
+      break;
+  }
 });
