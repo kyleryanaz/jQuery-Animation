@@ -9,30 +9,42 @@ function moveChicken() {
     case 0:
       console.log("up");
       $("#chicken")
-        .animate({ bottom: "+=1vh" })
-        .animate({ bottom: "+=20vh" })
-        .animate({ bottom: "-=1vh" });
+        .animate({ bottom: "+=1vh" }, 50)
+        .animate({ bottom: "+=5vh" }, 50)
+        .animate({ bottom: "-=1vh" }, 50)
+        .animate({ bottom: "+=1vh" }, 50)
+        .animate({ bottom: "+=5vh" }, 50)
+        .animate({ bottom: "-=1vh" }, 50);
       break;
     case 1:
       console.log("right");
       $("#chicken")
-        .animate({ bottom: "+=1vh" })
-        .animate({ left: "+=20vh" })
-        .animate({ bottom: "-=1vh" });
+        .animate({ bottom: "+=1vh" }, 50)
+        .animate({ left: "+=5vh" }, 50)
+        .animate({ bottom: "-=1vh" }, 50)
+        .animate({ bottom: "+=1vh" }, 50)
+        .animate({ left: "+=5vh" }, 50)
+        .animate({ bottom: "-=1vh" }, 50);
       break;
     case 2:
       console.log("down");
       $("#chicken")
-        .animate({ bottom: "+=1vh" })
-        .animate({ bottom: "-=20vh" })
-        .animate({ bottom: "-=1vh" });
+        .animate({ bottom: "+=1vh" }, 50)
+        .animate({ bottom: "-=5vh" }, 50)
+        .animate({ bottom: "-=1vh" }, 50)
+        .animate({ bottom: "+=1vh" }, 50)
+        .animate({ bottom: "-=5vh" }, 50)
+        .animate({ bottom: "-=1vh" }, 50);
       break;
     case 3:
       console.log("left");
       $("#chicken")
-        .animate({ bottom: "+=1vh" })
-        .animate({ left: "-=20vh" })
-        .animate({ bottom: "-=1vh" });
+        .animate({ bottom: "+=1vh" }, 50)
+        .animate({ left: "-=5vh" }, 50)
+        .animate({ bottom: "-=1vh" }, 50)
+        .animate({ bottom: "+=1vh" }, 50)
+        .animate({ left: "-=5vh" }, 50)
+        .animate({ bottom: "-=1vh" }, 50);
       break;
   }
 }
