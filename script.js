@@ -11,28 +11,28 @@ $("#chicken").click(function() {
       console.log("up");
       $(this)
         .animate({ bottom: "+=1vh" })
-        .animate({ bottom: "+=25vh" })
+        .animate({ bottom: "+=20vh" })
         .animate({ bottom: "-=1vh" });
       break;
     case 1:
       console.log("right");
       $(this)
         .animate({ bottom: "+=1vh" })
-        .animate({ left: "+=25vh" })
+        .animate({ left: "+=20vh" })
         .animate({ bottom: "-=1vh" });
       break;
     case 2:
       console.log("down");
       $(this)
         .animate({ bottom: "+=1vh" })
-        .animate({ bottom: "-=25vh" })
+        .animate({ bottom: "-=20vh" })
         .animate({ bottom: "-=1vh" });
       break;
     case 3:
       console.log("left");
       $(this)
         .animate({ bottom: "+=1vh" })
-        .animate({ left: "-=25vh" })
+        .animate({ left: "-=20vh" })
         .animate({ bottom: "-=1vh" });
       break;
   }
