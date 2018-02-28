@@ -1,0 +1,10 @@
+body {
+  background-color: tan;
+}
+
+#chicken {
+  position: relative;
+  background-color: white;
+  border-radius: 1rem;
+  width: 9vh;
+}
