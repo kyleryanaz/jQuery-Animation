@@ -5,8 +5,12 @@ body {
 
 #chicken {
   position: relative;
-  border-radius: 1rem;
-  width: 8vh;
+  width: 6vh;
+}
+
+#pig {
+  position: relative;
+  width: 12vh;
 }
 
 #barn {
@@ -17,8 +21,9 @@ body {
   display: inline-grid;
   height: 90vh;
   width: 90vw;
-  grid-template-columns: 30vw 30vw 30vw;
-  grid-template-rows: 30vh 30vh 30vh;
+  grid-template-columns: 26vw 26vw 26vw;
+  grid-template-rows: 26vh 26vh 26vh;
+  grid-gap: 6vh 6vw;
   border: 3px solid saddlebrown;
 }
 .grid-item {
@@ -27,4 +32,8 @@ body {
 
 #gridBarn {
   text-align: left;
+}
+
+.field{
+  background-color: limegreen;
 }
